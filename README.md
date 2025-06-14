@@ -13,9 +13,21 @@ Este projeto é uma aplicação web com backend em Java (Spring Boot) e frontend
 
 Para rodar o backend, navegue até a pasta `backend` e execute:
 
-```bash
-./mvnw spring-boot:run
+```powershell
+.\mvnw spring-boot:run
 ```
+
+> **Nota para Windows PowerShell:** Caso receba erro informando que o comando `.\mvnw` não foi encontrado, certifique-se de estar no diretório correto e que o arquivo `mvnw` existe. Use o comando com `.\` para executar scripts locais.
+
+> **Nota:** Certifique-se de que a variável de ambiente `JAVA_HOME` esteja configurada corretamente no seu sistema, apontando para a instalação do Java. Caso não esteja configurada, siga os passos abaixo para configurá-la no Windows:
+
+1. Abra o menu Iniciar e pesquise por "Variáveis de Ambiente". Clique em "Editar as variáveis de ambiente do sistema".
+2. Na janela "Propriedades do Sistema", clique no botão "Variáveis de Ambiente...".
+3. Em "Variáveis do sistema", clique em "Novo..." para criar uma nova variável.
+4. No campo "Nome da variável", digite: `JAVA_HOME`
+5. No campo "Valor da variável", insira o caminho da pasta onde o Java está instalado. Exemplo: `C:\Program Files\Java\jdk-17.0.2`
+6. Clique em OK para salvar e feche todas as janelas.
+7. Para verificar se a variável foi configurada corretamente, abra um novo terminal e execute: `echo %JAVA_HOME%`
 
 ### Frontend
 
